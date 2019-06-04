@@ -18,8 +18,8 @@ discover = unittest.defaultTestLoader.discover(case_path,
 print(discover)
 
 # 测试报告保存路径及测试报告名称
-now = time.strftime('%Y-%m-%d %H_%M_%S')
-stream = open(report_path + '\\' + now + 'HTMLReport.html', 'wb')
+#now = time.strftime('%Y-%m-%d %H_%M_%S')
+stream = open(report_path + '\\HTMLReport.html', 'wb')
 # 创建执行用例的方法--定义测试报告
 runner = HTMLTestRunnerPlugins.HTMLTestRunner(
     title='自动化测试报告',# 测试报告的标题
